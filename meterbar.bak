@@ -1,0 +1,878 @@
+EESchema Schematic File Version 4
+LIBS:meterbar-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L meterbar-rescue:OX40HAT-raspberrypi_hat-luzomat-rescue J?
+U 1 1 5D36CF0E
+P 2650 850
+F 0 "J?" H 3000 950 50  0000 C CNN
+F 1 "40HAT" H 2350 950 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2650 1050 50  0001 C CNN
+F 3 "" H 1950 850 50  0000 C CNN
+	1    2650 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2150 850  2150
+Wire Wire Line
+	3250 2150 4450 2150
+$Comp
+L power:GND #PWR?
+U 1 1 5D36CF16
+P 2050 1250
+F 0 "#PWR?" H 2050 1000 50  0001 C CNN
+F 1 "GND" H 2050 1100 50  0000 C CNN
+F 2 "" H 2050 1250 50  0000 C CNN
+F 3 "" H 2050 1250 50  0000 C CNN
+	1    2050 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D36CF1C
+P 2050 2050
+F 0 "#PWR?" H 2050 1800 50  0001 C CNN
+F 1 "GND" H 2050 1900 50  0000 C CNN
+F 2 "" H 2050 2050 50  0000 C CNN
+F 3 "" H 2050 2050 50  0000 C CNN
+	1    2050 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D36CF22
+P 2050 2750
+F 0 "#PWR?" H 2050 2500 50  0001 C CNN
+F 1 "GND" H 2050 2600 50  0000 C CNN
+F 2 "" H 2050 2750 50  0000 C CNN
+F 3 "" H 2050 2750 50  0000 C CNN
+	1    2050 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D36CF28
+P 3250 1050
+F 0 "#PWR?" H 3250 800 50  0001 C CNN
+F 1 "GND" H 3250 900 50  0000 C CNN
+F 2 "" H 3250 1050 50  0000 C CNN
+F 3 "" H 3250 1050 50  0000 C CNN
+	1    3250 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D36CF2E
+P 3250 1450
+F 0 "#PWR?" H 3250 1200 50  0001 C CNN
+F 1 "GND" H 3250 1300 50  0000 C CNN
+F 2 "" H 3250 1450 50  0000 C CNN
+F 3 "" H 3250 1450 50  0000 C CNN
+	1    3250 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D36CF34
+P 3250 1750
+F 0 "#PWR?" H 3250 1500 50  0001 C CNN
+F 1 "GND" H 3250 1600 50  0000 C CNN
+F 2 "" H 3250 1750 50  0000 C CNN
+F 3 "" H 3250 1750 50  0000 C CNN
+	1    3250 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D36CF3A
+P 3250 2250
+F 0 "#PWR?" H 3250 2000 50  0001 C CNN
+F 1 "GND" H 3250 2100 50  0000 C CNN
+F 2 "" H 3250 2250 50  0000 C CNN
+F 3 "" H 3250 2250 50  0000 C CNN
+	1    3250 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D36CF40
+P 3250 2450
+F 0 "#PWR?" H 3250 2200 50  0001 C CNN
+F 1 "GND" H 3250 2300 50  0000 C CNN
+F 2 "" H 3250 2450 50  0000 C CNN
+F 3 "" H 3250 2450 50  0000 C CNN
+	1    3250 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 950  3250 850 
+$Comp
+L power:+5V #PWR?
+U 1 1 5D36CF47
+P 3250 850
+F 0 "#PWR?" H 3250 700 50  0001 C CNN
+F 1 "+5V" V 3265 978 50  0000 L CNN
+F 2 "" H 3250 850 50  0001 C CNN
+F 3 "" H 3250 850 50  0001 C CNN
+	1    3250 850 
+	0    1    1    0   
+$EndComp
+Connection ~ 3250 850 
+Text Label 850  850  0    50   ~ 0
++3.3V_rpi
+Wire Wire Line
+	850  850  2050 850 
+Text Label 850  2150 0    50   ~ 0
+id_sda_eeprom
+Text Label 3900 2150 0    50   ~ 0
+id_scl_eeprom
+Text Label 850  1350 0    50   ~ 0
+boiler_set_rising_edge
+Text Label 4000 1350 0    50   ~ 0
+~boiler_reset~
+Text Label 4000 2550 0    50   ~ 0
+schnaps_top
+Text Label 850  2550 0    50   ~ 0
+schnaps_bottom
+Text Label 4250 2650 0    50   ~ 0
+water
+Text Label 850  2650 0    50   ~ 0
+air
+Text Label 4000 2750 0    50   ~ 0
+spare_valve
+Text Label 4300 1850 0    50   ~ 0
+led1
+Text Label 4300 1650 0    50   ~ 0
+led2
+Text Label 4100 1550 0    50   ~ 0
+led_spare
+Text Label 850  1550 0    50   ~ 0
+coin_slot_tx
+Text Label 850  1450 0    50   ~ 0
+coin_slot_rx
+Text Label 4050 1250 0    50   ~ 0
+luz_switch
+Text Label 4050 1150 0    50   ~ 0
+tea_switch
+Text Label 850  1150 0    50   ~ 0
+spare_switch
+Text Label 850  1950 0    50   ~ 0
+sck
+Text Label 850  1850 0    50   ~ 0
+miso
+Text Label 850  1750 0    50   ~ 0
+mosi
+Text Label 4300 1950 0    50   ~ 0
+~cs1
+Text Label 4300 2050 0    50   ~ 0
+~cs2
+Wire Wire Line
+	2050 1750 850  1750
+Wire Wire Line
+	2050 1850 850  1850
+Wire Wire Line
+	2050 1950 850  1950
+Wire Wire Line
+	4450 1950 3250 1950
+Wire Wire Line
+	4450 2050 3250 2050
+Wire Wire Line
+	3250 2750 4450 2750
+Wire Wire Line
+	3250 2650 4450 2650
+Wire Wire Line
+	850  2650 2050 2650
+Wire Wire Line
+	3250 2550 4450 2550
+Wire Wire Line
+	850  2550 2050 2550
+Wire Wire Line
+	3250 1850 4450 1850
+Wire Wire Line
+	3250 1650 4450 1650
+Wire Wire Line
+	3250 1550 4450 1550
+Wire Wire Line
+	850  1550 2050 1550
+Wire Wire Line
+	850  1450 2050 1450
+Wire Wire Line
+	3250 1350 4450 1350
+Wire Wire Line
+	850  1350 2050 1350
+Wire Wire Line
+	3250 1250 4450 1250
+Wire Wire Line
+	850  1150 2050 1150
+Wire Wire Line
+	3250 1150 4450 1150
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D36CF7A
+P 4450 1950
+F 0 "TP?" V 4450 2138 50  0000 L CNN
+F 1 "TestPoint" H 4508 1979 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 4650 1950 50  0001 C CNN
+F 3 "~" H 4650 1950 50  0001 C CNN
+	1    4450 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D36CF80
+P 4450 2050
+F 0 "TP?" V 4450 2238 50  0000 L CNN
+F 1 "TestPoint" H 4508 2079 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 4650 2050 50  0001 C CNN
+F 3 "~" H 4650 2050 50  0001 C CNN
+	1    4450 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D36CF86
+P 850 1750
+F 0 "TP?" V 850 2000 50  0000 C CNN
+F 1 "TestPoint" H 908 1779 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 1050 1750 50  0001 C CNN
+F 3 "~" H 1050 1750 50  0001 C CNN
+	1    850  1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D36CF8C
+P 850 1850
+F 0 "TP?" V 850 2100 50  0000 C CNN
+F 1 "TestPoint" H 908 1879 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 1050 1850 50  0001 C CNN
+F 3 "~" H 1050 1850 50  0001 C CNN
+	1    850  1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D36CF92
+P 850 1950
+F 0 "TP?" V 850 2200 50  0000 C CNN
+F 1 "TestPoint" H 908 1979 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 1050 1950 50  0001 C CNN
+F 3 "~" H 1050 1950 50  0001 C CNN
+	1    850  1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D36CF98
+P 2050 950
+F 0 "TP?" V 2050 1250 50  0000 C CNN
+F 1 "TestPoint" H 2108 979 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 2250 950 50  0001 C CNN
+F 3 "~" H 2250 950 50  0001 C CNN
+	1    2050 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D36CF9E
+P 2050 1050
+F 0 "TP?" V 2050 1350 50  0000 C CNN
+F 1 "TestPoint" H 2108 1079 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 2250 1050 50  0001 C CNN
+F 3 "~" H 2250 1050 50  0001 C CNN
+	1    2050 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D36CFA4
+P 2050 2250
+F 0 "TP?" V 2050 2550 50  0000 C CNN
+F 1 "TestPoint" H 2108 2279 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 2250 2250 50  0001 C CNN
+F 3 "~" H 2250 2250 50  0001 C CNN
+	1    2050 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D36CFAA
+P 2050 2350
+F 0 "TP?" V 2050 2650 50  0000 C CNN
+F 1 "TestPoint" H 2108 2379 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 2250 2350 50  0001 C CNN
+F 3 "~" H 2250 2350 50  0001 C CNN
+	1    2050 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D36CFB0
+P 2050 2450
+F 0 "TP?" V 2050 2750 50  0000 C CNN
+F 1 "TestPoint" H 2108 2479 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 2250 2450 50  0001 C CNN
+F 3 "~" H 2250 2450 50  0001 C CNN
+	1    2050 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D36CFB6
+P 3500 2350
+F 0 "TP?" V 3500 2650 50  0000 C CNN
+F 1 "TestPoint" H 3558 2379 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm" H 3700 2350 50  0001 C CNN
+F 3 "~" H 3700 2350 50  0001 C CNN
+	1    3500 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 2350 3500 2350
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5D3982E9
+P 1050 3600
+AR Path="/5D354AA9/5D3982E9" Ref="J?"  Part="1" 
+AR Path="/5D3982E9" Ref="J?"  Part="1" 
+F 0 "J?" H 970 3817 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 970 3726 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1050 3600 50  0001 C CNN
+F 3 "~" H 1050 3600 50  0001 C CNN
+	1    1050 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3700 2000 3700
+Wire Wire Line
+	1250 3600 1550 3600
+$Comp
+L Device:C C?
+U 1 1 5D3B78FF
+P 4300 3450
+AR Path="/5D354AA9/5D3B78FF" Ref="C?"  Part="1" 
+AR Path="/5D3B78FF" Ref="C?"  Part="1" 
+F 0 "C?" H 4415 3496 50  0000 L CNN
+F 1 "100n" H 4415 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4338 3300 50  0001 C CNN
+F 3 "~" H 4300 3450 50  0001 C CNN
+	1    4300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5D3B7905
+P 4300 3300
+AR Path="/5D354AA9/5D3B7905" Ref="#PWR?"  Part="1" 
+AR Path="/5D3B7905" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4300 3150 50  0001 C CNN
+F 1 "+3.3V" H 4315 3473 50  0000 C CNN
+F 2 "" H 4300 3300 50  0001 C CNN
+F 3 "" H 4300 3300 50  0001 C CNN
+	1    4300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D3B790B
+P 4300 4150
+AR Path="/5D354AA9/5D3B790B" Ref="#PWR?"  Part="1" 
+AR Path="/5D3B790B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4300 3900 50  0001 C CNN
+F 1 "GND" H 4305 3977 50  0000 C CNN
+F 2 "" H 4300 4150 50  0001 C CNN
+F 3 "" H 4300 4150 50  0001 C CNN
+	1    4300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L meterbar-rescue:DMG2305UX-13-dk_Transistors-FETs-MOSFETs-Single-luzomat-rescue Q?
+U 1 1 5D3B791A
+P 3750 3300
+AR Path="/5D354AA9/5D3B791A" Ref="Q?"  Part="1" 
+AR Path="/5D3B791A" Ref="Q?"  Part="1" 
+F 0 "Q?" V 4017 3300 60  0000 C CNN
+F 1 "DMG2305UX-13" V 3911 3300 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 3950 3500 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf" H 3950 3600 60  0001 L CNN
+F 4 "DMG2305UX-13DICT-ND" H 3950 3700 60  0001 L CNN "Digi-Key_PN"
+F 5 "DMG2305UX-13" H 3950 3800 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 3950 3900 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 3950 4000 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf" H 3950 4100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/DMG2305UX-13/DMG2305UX-13DICT-ND/4251589" H 3950 4200 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 20V 4.2A SOT23" H 3950 4300 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 3950 4400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3950 4500 60  0001 L CNN "Status"
+	1    3750 3300
+	0    1    -1   0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 5D3B7920
+P 3550 3800
+AR Path="/5D354AA9/5D3B7920" Ref="Q?"  Part="1" 
+AR Path="/5D3B7920" Ref="Q?"  Part="1" 
+F 0 "Q?" H 3755 3846 50  0000 L CNN
+F 1 "2N7002" H 3755 3755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3750 3725 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 3550 3800 50  0001 L CNN
+	1    3550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D3B7926
+P 3350 3450
+AR Path="/5D354AA9/5D3B7926" Ref="R?"  Part="1" 
+AR Path="/5D3B7926" Ref="R?"  Part="1" 
+F 0 "R?" H 3420 3496 50  0000 L CNN
+F 1 "10k" H 3420 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 3450 50  0001 C CNN
+F 3 "~" H 3350 3450 50  0001 C CNN
+	1    3350 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3300 3550 3300
+Text Label 2900 3800 0    50   ~ 0
++3.3V_rpi
+Wire Wire Line
+	2550 3300 3350 3300
+Connection ~ 3350 3300
+Wire Wire Line
+	3950 3300 4300 3300
+Connection ~ 4300 3300
+Wire Wire Line
+	3350 3600 3650 3600
+Connection ~ 3650 3600
+$Comp
+L Device:R R?
+U 1 1 5D3B7934
+P 3300 4000
+AR Path="/5D354AA9/5D3B7934" Ref="R?"  Part="1" 
+AR Path="/5D3B7934" Ref="R?"  Part="1" 
+F 0 "R?" H 3370 4046 50  0000 L CNN
+F 1 "10k" H 3370 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3230 4000 50  0001 C CNN
+F 3 "~" H 3300 4000 50  0001 C CNN
+	1    3300 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3800 3300 3800
+Wire Wire Line
+	3300 3850 3300 3800
+Connection ~ 3300 3800
+Wire Wire Line
+	3300 3800 3350 3800
+Wire Wire Line
+	4300 3600 4300 4150
+Wire Wire Line
+	4300 4150 3650 4150
+Connection ~ 4300 4150
+Connection ~ 3300 4150
+Wire Wire Line
+	3300 4150 2550 4150
+Wire Wire Line
+	3650 4000 3650 4150
+Connection ~ 3650 4150
+Wire Wire Line
+	3650 4150 3300 4150
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 5D405471
+P 5800 3750
+AR Path="/5C0C80CB/5D405471" Ref="Q?"  Part="1" 
+AR Path="/5C0C995E/5D405471" Ref="Q?"  Part="1" 
+AR Path="/5C0C99E3/5D405471" Ref="Q?"  Part="1" 
+AR Path="/5C0C9B56/5D405471" Ref="Q?"  Part="1" 
+AR Path="/5C0C9BDB/5D405471" Ref="Q?"  Part="1" 
+AR Path="/5C0CCA50/5D405471" Ref="Q?"  Part="1" 
+AR Path="/5C0CD9EF/5D405471" Ref="Q?"  Part="1" 
+AR Path="/5C0CDD32/5D405471" Ref="Q?"  Part="1" 
+AR Path="/5C0D9062/5D405471" Ref="Q?"  Part="1" 
+AR Path="/5D405471" Ref="Q?"  Part="1" 
+F 0 "Q?" V 6050 3800 50  0000 L CNN
+F 1 "2N7002" V 6050 3400 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6000 3675 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 5800 3750 50  0001 L CNN
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D405477
+P 5900 3950
+AR Path="/5D405477" Ref="#PWR?"  Part="1" 
+AR Path="/5C0C80CB/5D405477" Ref="#PWR?"  Part="1" 
+AR Path="/5C0C995E/5D405477" Ref="#PWR?"  Part="1" 
+AR Path="/5C0C99E3/5D405477" Ref="#PWR?"  Part="1" 
+AR Path="/5C0C9B56/5D405477" Ref="#PWR?"  Part="1" 
+AR Path="/5C0C9BDB/5D405477" Ref="#PWR?"  Part="1" 
+AR Path="/5C0CCA50/5D405477" Ref="#PWR?"  Part="1" 
+AR Path="/5C0CD9EF/5D405477" Ref="#PWR?"  Part="1" 
+AR Path="/5C0CDD32/5D405477" Ref="#PWR?"  Part="1" 
+AR Path="/5C0D9062/5D405477" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5900 3700 50  0001 C CNN
+F 1 "GND" H 5900 3800 50  0000 C CNN
+F 2 "" H 5900 3950 50  0000 C CNN
+F 3 "" H 5900 3950 50  0000 C CNN
+	1    5900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D40547D
+P 5450 3750
+AR Path="/5C0C80CB/5D40547D" Ref="R?"  Part="1" 
+AR Path="/5C0C995E/5D40547D" Ref="R?"  Part="1" 
+AR Path="/5C0C99E3/5D40547D" Ref="R?"  Part="1" 
+AR Path="/5C0C9B56/5D40547D" Ref="R?"  Part="1" 
+AR Path="/5C0C9BDB/5D40547D" Ref="R?"  Part="1" 
+AR Path="/5C0CCA50/5D40547D" Ref="R?"  Part="1" 
+AR Path="/5C0CD9EF/5D40547D" Ref="R?"  Part="1" 
+AR Path="/5C0CDD32/5D40547D" Ref="R?"  Part="1" 
+AR Path="/5C0D9062/5D40547D" Ref="R?"  Part="1" 
+AR Path="/5D40547D" Ref="R?"  Part="1" 
+F 0 "R?" V 5243 3750 50  0000 C CNN
+F 1 "100R" V 5334 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5380 3750 50  0001 C CNN
+F 3 "~" H 5450 3750 50  0001 C CNN
+	1    5450 3750
+	0    1    1    0   
+$EndComp
+Text HLabel 5300 3750 0    50   Input ~ 0
+gate
+Text HLabel 5900 3250 1    50   Output ~ 0
+out
+$Comp
+L Device:R R?
+U 1 1 5D405485
+P 5900 3400
+AR Path="/5C0C80CB/5D405485" Ref="R?"  Part="1" 
+AR Path="/5C0C995E/5D405485" Ref="R?"  Part="1" 
+AR Path="/5C0C99E3/5D405485" Ref="R?"  Part="1" 
+AR Path="/5C0C9B56/5D405485" Ref="R?"  Part="1" 
+AR Path="/5C0C9BDB/5D405485" Ref="R?"  Part="1" 
+AR Path="/5C0CCA50/5D405485" Ref="R?"  Part="1" 
+AR Path="/5C0CD9EF/5D405485" Ref="R?"  Part="1" 
+AR Path="/5C0CDD32/5D405485" Ref="R?"  Part="1" 
+AR Path="/5C0D9062/5D405485" Ref="R?"  Part="1" 
+AR Path="/5D405485" Ref="R?"  Part="1" 
+F 0 "R?" H 5830 3354 50  0000 R CNN
+F 1 "2k2" H 5830 3445 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5830 3400 50  0001 C CNN
+F 3 "~" H 5900 3400 50  0001 C CNN
+	1    5900 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:DMC2053UVT Q?
+U 1 1 5D3B9829
+P 4050 5300
+F 0 "Q?" H 4156 5346 50  0000 L CNN
+F 1 "DMC2053UVT" H 4156 5255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 4000 4825 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMC2053UVT.pdf" H 3250 4500 50  0001 C CNN
+	1    4050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMC2053UVT Q?
+U 2 1 5D3C882D
+P 4050 4800
+F 0 "Q?" V 4293 4800 50  0000 C CNN
+F 1 "DMC2053UVT" V 4202 4800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 4000 4325 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMC2053UVT.pdf" H 3250 4000 50  0001 C CNN
+	2    4050 4800
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D3D3902
+P 4050 5600
+AR Path="/5D354AA9/5D3D3902" Ref="#PWR?"  Part="1" 
+AR Path="/5D3D3902" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4050 5350 50  0001 C CNN
+F 1 "GND" H 4055 5427 50  0000 C CNN
+F 2 "" H 4050 5600 50  0001 C CNN
+F 3 "" H 4050 5600 50  0001 C CNN
+	1    4050 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D3DA63B
+P 3700 4950
+AR Path="/5C0C80CB/5D3DA63B" Ref="R?"  Part="1" 
+AR Path="/5C0C995E/5D3DA63B" Ref="R?"  Part="1" 
+AR Path="/5C0C99E3/5D3DA63B" Ref="R?"  Part="1" 
+AR Path="/5C0C9B56/5D3DA63B" Ref="R?"  Part="1" 
+AR Path="/5C0C9BDB/5D3DA63B" Ref="R?"  Part="1" 
+AR Path="/5C0CCA50/5D3DA63B" Ref="R?"  Part="1" 
+AR Path="/5C0CD9EF/5D3DA63B" Ref="R?"  Part="1" 
+AR Path="/5C0CDD32/5D3DA63B" Ref="R?"  Part="1" 
+AR Path="/5C0D9062/5D3DA63B" Ref="R?"  Part="1" 
+AR Path="/5D3DA63B" Ref="R?"  Part="1" 
+F 0 "R?" H 3630 4904 50  0000 R CNN
+F 1 "47k" H 3630 4995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3630 4950 50  0001 C CNN
+F 3 "~" H 3700 4950 50  0001 C CNN
+	1    3700 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 5100 4050 5100
+Connection ~ 4050 5100
+Wire Wire Line
+	3700 4800 3850 4800
+$Comp
+L power:+15V #PWR?
+U 1 1 5D3E23D7
+P 3550 4800
+F 0 "#PWR?" H 3550 4650 50  0001 C CNN
+F 1 "+15V" H 3565 4973 50  0000 C CNN
+F 2 "" H 3550 4800 50  0001 C CNN
+F 3 "" H 3550 4800 50  0001 C CNN
+	1    3550 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4800 3700 4800
+Connection ~ 3700 4800
+$Comp
+L Transistor_FET:DMC2053UVT Q?
+U 1 1 5D3E6207
+P 6400 5450
+F 0 "Q?" H 6506 5496 50  0000 L CNN
+F 1 "DMC2053UVT" H 6506 5405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 6350 4975 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMC2053UVT.pdf" H 5600 4650 50  0001 C CNN
+	1    6400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR?
+U 1 1 5D3E89E0
+P 6400 5750
+F 0 "#PWR?" H 6400 5850 50  0001 C CNN
+F 1 "-15V" H 6415 5923 50  0000 C CNN
+F 2 "" H 6400 5750 50  0001 C CNN
+F 3 "" H 6400 5750 50  0001 C CNN
+	1    6400 5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D3E94FE
+P 5950 5600
+AR Path="/5C0C80CB/5D3E94FE" Ref="R?"  Part="1" 
+AR Path="/5C0C995E/5D3E94FE" Ref="R?"  Part="1" 
+AR Path="/5C0C99E3/5D3E94FE" Ref="R?"  Part="1" 
+AR Path="/5C0C9B56/5D3E94FE" Ref="R?"  Part="1" 
+AR Path="/5C0C9BDB/5D3E94FE" Ref="R?"  Part="1" 
+AR Path="/5C0CCA50/5D3E94FE" Ref="R?"  Part="1" 
+AR Path="/5C0CD9EF/5D3E94FE" Ref="R?"  Part="1" 
+AR Path="/5C0CDD32/5D3E94FE" Ref="R?"  Part="1" 
+AR Path="/5C0D9062/5D3E94FE" Ref="R?"  Part="1" 
+AR Path="/5D3E94FE" Ref="R?"  Part="1" 
+F 0 "R?" H 5880 5554 50  0000 R CNN
+F 1 "47k" H 5880 5645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5880 5600 50  0001 C CNN
+F 3 "~" H 5950 5600 50  0001 C CNN
+	1    5950 5600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 5650 6400 5750
+Wire Wire Line
+	5950 5750 6400 5750
+Connection ~ 6400 5750
+Wire Wire Line
+	5950 5450 6100 5450
+$Comp
+L Transistor_FET:DMC2053UVT Q?
+U 2 1 5D3F0CA7
+P 5950 5050
+F 0 "Q?" H 6056 5050 50  0000 L CNN
+F 1 "DMC2053UVT" H 6056 5095 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 5900 4575 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMC2053UVT.pdf" H 5150 4250 50  0001 C CNN
+	2    5950 5050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5950 5250 5950 5450
+Connection ~ 5950 5450
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5D3F8F25
+P 5950 4750
+AR Path="/5D354AA9/5D3F8F25" Ref="#PWR?"  Part="1" 
+AR Path="/5D3F8F25" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5950 4600 50  0001 C CNN
+F 1 "+3.3V" H 5965 4923 50  0000 C CNN
+F 2 "" H 5950 4750 50  0001 C CNN
+F 3 "" H 5950 4750 50  0001 C CNN
+	1    5950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D3FAC68
+P 5500 4900
+AR Path="/5C0C80CB/5D3FAC68" Ref="R?"  Part="1" 
+AR Path="/5C0C995E/5D3FAC68" Ref="R?"  Part="1" 
+AR Path="/5C0C99E3/5D3FAC68" Ref="R?"  Part="1" 
+AR Path="/5C0C9B56/5D3FAC68" Ref="R?"  Part="1" 
+AR Path="/5C0C9BDB/5D3FAC68" Ref="R?"  Part="1" 
+AR Path="/5C0CCA50/5D3FAC68" Ref="R?"  Part="1" 
+AR Path="/5C0CD9EF/5D3FAC68" Ref="R?"  Part="1" 
+AR Path="/5C0CDD32/5D3FAC68" Ref="R?"  Part="1" 
+AR Path="/5C0D9062/5D3FAC68" Ref="R?"  Part="1" 
+AR Path="/5D3FAC68" Ref="R?"  Part="1" 
+F 0 "R?" H 5430 4854 50  0000 R CNN
+F 1 "47k" H 5430 4945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5430 4900 50  0001 C CNN
+F 3 "~" H 5500 4900 50  0001 C CNN
+	1    5500 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 4750 5950 4750
+Wire Wire Line
+	5950 4850 5950 4750
+Connection ~ 5950 4750
+Wire Wire Line
+	5500 5050 5650 5050
+$Comp
+L Transistor_FET:DMC2053UVT Q?
+U 1 1 5D407A52
+P 5500 5450
+F 0 "Q?" H 5606 5450 50  0000 L CNN
+F 1 "DMC2053UVT" H 5606 5405 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 5450 4975 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMC2053UVT.pdf" H 4700 4650 50  0001 C CNN
+	1    5500 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5750 5500 5750
+Connection ~ 5950 5750
+$Comp
+L Device:R R?
+U 1 1 5D4123F8
+P 3600 5450
+AR Path="/5C0C80CB/5D4123F8" Ref="R?"  Part="1" 
+AR Path="/5C0C995E/5D4123F8" Ref="R?"  Part="1" 
+AR Path="/5C0C99E3/5D4123F8" Ref="R?"  Part="1" 
+AR Path="/5C0C9B56/5D4123F8" Ref="R?"  Part="1" 
+AR Path="/5C0C9BDB/5D4123F8" Ref="R?"  Part="1" 
+AR Path="/5C0CCA50/5D4123F8" Ref="R?"  Part="1" 
+AR Path="/5C0CD9EF/5D4123F8" Ref="R?"  Part="1" 
+AR Path="/5C0CDD32/5D4123F8" Ref="R?"  Part="1" 
+AR Path="/5C0D9062/5D4123F8" Ref="R?"  Part="1" 
+AR Path="/5D4123F8" Ref="R?"  Part="1" 
+F 0 "R?" H 3530 5404 50  0000 R CNN
+F 1 "47k" H 3530 5495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3530 5450 50  0001 C CNN
+F 3 "~" H 3600 5450 50  0001 C CNN
+	1    3600 5450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 5500 4050 5600
+Wire Wire Line
+	4050 5600 3600 5600
+Connection ~ 4050 5600
+Wire Wire Line
+	3600 5300 3750 5300
+$Comp
+L Device:R R?
+U 1 1 5D41CF88
+P 5050 5600
+AR Path="/5C0C80CB/5D41CF88" Ref="R?"  Part="1" 
+AR Path="/5C0C995E/5D41CF88" Ref="R?"  Part="1" 
+AR Path="/5C0C99E3/5D41CF88" Ref="R?"  Part="1" 
+AR Path="/5C0C9B56/5D41CF88" Ref="R?"  Part="1" 
+AR Path="/5C0C9BDB/5D41CF88" Ref="R?"  Part="1" 
+AR Path="/5C0CCA50/5D41CF88" Ref="R?"  Part="1" 
+AR Path="/5C0CD9EF/5D41CF88" Ref="R?"  Part="1" 
+AR Path="/5C0CDD32/5D41CF88" Ref="R?"  Part="1" 
+AR Path="/5C0D9062/5D41CF88" Ref="R?"  Part="1" 
+AR Path="/5D41CF88" Ref="R?"  Part="1" 
+F 0 "R?" H 4980 5554 50  0000 R CNN
+F 1 "47k" H 4980 5645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4980 5600 50  0001 C CNN
+F 3 "~" H 5050 5600 50  0001 C CNN
+	1    5050 5600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 5650 5500 5750
+Wire Wire Line
+	5500 5750 5050 5750
+Connection ~ 5500 5750
+Wire Wire Line
+	5050 5450 5200 5450
+Wire Wire Line
+	5500 5250 5500 5050
+Connection ~ 5500 5050
+$Comp
+L power:VDDA #PWR?
+U 1 1 5D424F8A
+P 4250 4800
+F 0 "#PWR?" H 4250 4650 50  0001 C CNN
+F 1 "VDDA" V 4267 4928 50  0000 L CNN
+F 2 "" H 4250 4800 50  0001 C CNN
+F 3 "" H 4250 4800 50  0001 C CNN
+	1    4250 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VSSA #PWR?
+U 1 1 5D425A9C
+P 6400 5250
+F 0 "#PWR?" H 6400 5100 50  0001 C CNN
+F 1 "VSSA" H 6417 5423 50  0000 C CNN
+F 2 "" H 6400 5250 50  0001 C CNN
+F 3 "" H 6400 5250 50  0001 C CNN
+	1    6400 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMC2053UVT Q?
+U 2 1 5D43215F
+P 5500 6200
+F 0 "Q?" H 5606 6200 50  0000 L CNN
+F 1 "DMC2053UVT" H 5606 6245 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 5450 5725 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMC2053UVT.pdf" H 4700 5400 50  0001 C CNN
+	2    5500 6200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5500 6000 5200 6000
+Wire Wire Line
+	5200 6000 5200 6200
+Wire Wire Line
+	5200 6400 5500 6400
+Connection ~ 5200 6200
+Wire Wire Line
+	5200 6200 5200 6400
+$EndSCHEMATC
